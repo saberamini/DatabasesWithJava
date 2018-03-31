@@ -13,4 +13,6 @@ To do this, we use Java to build an application.  But in order for this applicat
 
 Now you do not have to be an expert, but you can think abstracty that our Java program that we build must somehow "connect" to our database.  We then need ways to write queries that will be converted to SQL queries.  So there are a lot of details that need to be taken care of, but fortunately, we do not care much abou these details.  We simply abstract things.
 
-The AP we use to interact with our database is called JDBC - Java Database Connectivity.   
+The API we use to interact with our database is called JDBC - Java Database Connectivity.  However, apart from the API, we also need a JDBC driver.  The details of this setup are explained in more detail <a href="http://www.tutorialspoint.com/jdbc/jdbc-driver-types.htm"> here</a>.
+
+Again, for our purposes, these details are not important.  You can think of the JDBC API as the methods or function declarations.  The JDBC driver is then the specific implementation or definition of these functions and these are specific to the vendor (as are specifc SQL commands).  How this API-Driver interaction occurs is a matter of detail and there are four different driver types which have historically progressed as new methods have taken over the old.  It is generally agreed that if you are buidling a GUI from scratch, you should use a <b>Type 4</b> unless there is a very godo specific reason you do not want to do this.
