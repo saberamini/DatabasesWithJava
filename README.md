@@ -40,4 +40,4 @@ Download ojdbc6.jar from blackboard (under Lectures, Lecture 8) and follow the v
 
 Your final project should look something like this and when you run it you should get a confirmation that you connected.
 
-<img src="connection.png" alt="HTML5 Icon" style="width:128px;height:128px;">
+<img src="conection.png" alt="HTML5 Icon" style="width:128px;height:128px;">
