@@ -32,7 +32,15 @@ First of all, we want to download Netbeans if you already have not done so from 
 
 If the installer cannot find a compatible JDK installation on your system, you should Cancel the installation and install the following instead http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html
 
-To test your installation Choose File->New Project->Java->Java Application->Next->Finish.
+To test your installation, Open up Netbean and then from the menu bar choose File->New Project->Java->Java Application->Next as shown below:
+
+<img src="javaProject1.png" alt="New Java Project" style="width:128px;height:128px;">
+
+Choose a project name and directory (doesn't really matter where):
+
+<img src="javaProject2.png" alt="New Java Project" style="width:128px;height:128px;">
+
+Click finish.
 
 Add: System.out.println("Hello, World"); in to your main and choose Run.
 
