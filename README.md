@@ -27,7 +27,7 @@ The Lynda.com video tutorial uses <i>Eclipse</i> but we will use <i>Netbeans</i>
 
 First of all, we want to download Netbeans if you already have not done so from https://netbeans.org/downloads/index.html.  I suggest choosing Java EE as shown below:
 
-<img src="NetbeanDownload.png" alt="HTML5 Icon" style="width:128px;height:128px;">
+<img src="NetbeanDownload.png" alt="Netbeans Download" style="width:128px;height:128px;">
 
 
 If the installer cannot find a compatible JDK installation on your system, you should Cancel the installation and install the following instead http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html
@@ -42,10 +42,10 @@ Choose a project name and directory (doesn't really matter where):
 
 Click finish.
 
-Add: System.out.println("Hello, World"); in to your main and choose Run.
+Add: System.out.println("Hello, World"); to your main function and choose Run.  You should see a successful Build.
 
 Download ojdbc6.jar from blackboard (under Lectures, Lecture 8) and follow the video tutorial on setting up the rest of the environment (it is a good idea to just watch the video once, then go over it again while setting up the environment).  Remember the video uses MySQL and HyperSQL, our connection string will be ("jdbc:oracle:thin:@apollo.humber.ca:1521:msit").
 
 Your final project should look something like this and when you run it you should get a confirmation that you connected.
 
-<img src="conection.png" alt="HTML5 Icon" style="width:128px;height:128px;">
+<img src="conection.png" alt="Java project with connection to SQL Server" style="width:128px;height:128px;">
