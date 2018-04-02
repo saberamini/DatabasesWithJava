@@ -5,7 +5,7 @@ The Java portion of the course involves using a Java program to make the queries
 
 If you remember from our discussion on relational databases, there are three components to a database management system (DBMS).  This is the Database Application, the Database Engine and the actual Database.  
 
-We have worked on the concept of  building Databse schemas and working with them using CRUD.
+We have worked on the concept of  building Database schemas and working with them using CRUD.
 
 You can argue that we have used some kind of graphical user interface by using SQL Devloper, but this required us to know SQL and execute increasing complex queries.  We likely need a more user friendly GUI (with bottons, menue items etc) if our database will be used by someone that does not have knowledge of SQL.
 
