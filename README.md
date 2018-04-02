@@ -9,23 +9,25 @@ We have worked on the concept of  building Database schemas and working with the
 
 You can argue that we have used some kind of graphical user interface by using SQL Developer, but this required us to know SQL and execute increasing complex queries.  We likely need a more user friendly GUI (with bottons, menue items etc) if our database will be used by someone that does not have knowledge of SQL.
 
-To do this, we use Java to build an application.  But in order for this application to talk to our database we need certain functions.  These functions or subroutines are collectively call the API.  
+To do this, we use Java to build an application.  But clearly our application needs to "talk" to the database and for this we need certain functions.  These functions or subroutines are collectively call the API - application specific interface.  This buzzword is thrown around a lot for many different applications but in essense an API defines a set of agreed upon functions needed to interact with our database.  
 
-Now you do not have to be an expert, but you can think abstracty that our Java program that we build must somehow "connect" to our database.  We then need ways to write queries that will be converted to SQL queries.  So there are a lot of details that need to be taken care of, but fortunately, we do not care much about these details.  We simply abstract things.
+Now you do not have to be an expert to come to the realization that our Java program must also somehow "connect" to our database where all our nice tables/relations are.  We also need ways to write queries that will be converted to SQL queries.  So there are a lot of details that need to be taken care of, but fortunately, we do not care much about these details.  We simply abstract things and use them but it is still a good idea to get an idea of what is happening under the hood for all this magic to happen.
 
-The API we use to interact with our database is called JDBC - Java Database Connectivity.  However, apart from the API, we also need a JDBC driver.  The details of this setup are <a href="http://www.tutorialspoint.com/jdbc/jdbc-driver-types.htm" target="_blank">explained in more detail here</a>.
+The API we use to interact with our database is called JDBC - Java Database Connectivity.  However, apart from the API, we also need a JDBC driver.  The details of this setup are explained in the Lynda.com video and <a href="http://www.tutorialspoint.com/jdbc/jdbc-driver-types.htm" target="_blank">in more detail here</a>.
 
-Again, for our purposes, these details are not important.  You can think of the JDBC API as the methods or function declarations.  The JDBC driver is then the specific implementation or definition of these functions and these are specific to the vendor (as are specifc SQL commands).  How this API-Driver interaction occurs is a matter of detail and there are four different driver types which have historically progressed as new methods have taken over the old.  It is generally agreed that if you are buidling a GUI from scratch, you should use a <b>Type 4</b> driver unless there is a very good specific reason you do not want to do this.
+Again, for our purposes, these details are not important.  You can think of the JDBC API as the methods or function declarations.  The JDBC driver is then the specific implementation or definition of these functions and these are specific to the vendor (as are specifc SQL commands).  How this API-Driver interaction occurs is a matter of detail and there are four different driver types which have historically progressed as new methods have taken over the old.  It is generally agreed that if you are building a GUI from scratch, you should use a <b>Type 4</b> driver unless there is a very good specific reason you do not want to do this.
 
-# A Skeleton Java Project for Running Queries
+# Software Download and Installation
 
 We want to start by creating a skeleton Java project to connect to our SQL Server database and make queries.  We are roughly following the instructions in Chapter 2 of <a href="https://www.lynda.com/Java-tutorials/What-JDBC/110284/117302-4.html" target="_blank">Java: Database Integration with JDBC</a> 
 
-Please watch the video, it is a good introdcution to JDBC API and drivers.  The setup uses MySQL and Eclipse rather than PL/SQL and Netbeans, but the instructions can easily be adapted.  Follow the instructions below to setup a skeleton for running queries through Java.
+Please watch the video, it is a good introdcution to JDBC API and drivers.  The setup uses MySQL and Eclipse rather than PL/SQL (Oracle version of SQL) and Netbeans, but the instructions can easily be adapted.  Follow the instructions below to setup a skeleton for running queries through Java.
 
-The Lynda.com video tutorial uses <i>Eclipse</i> but we will use <i>Netbeans</i>.  What is the difference between Netbeans and Eclipse and which one should you use?  There is in fact no hard answer (although some prefers would disagrea).  You may find <a href="https://stackoverflow.com/questions/330027/what-is-the-difference-between-eclipse-and-netbeans-if-i-want-to-use-only-the-ja" target="_blank"> this discussion on Stackoverflow where users give their opinion interesting</a>.
+As we just mentioned, the Lynda.com video tutorial uses <i>Eclipse</i> but we will use <i>Netbeans</i>.  What is the difference between Netbeans and Eclipse and which one should you use?  There is in fact no hard answer (although some experts in this area would strongly disagrea).  You may find <a href="https://stackoverflow.com/questions/330027/what-is-the-difference-between-eclipse-and-netbeans-if-i-want-to-use-only-the-ja" target="_blank"> this discussion on Stackoverflow where users give their opinion interesting</a>.
 
-Anyways, let's get started.  First, we want to download Netbeans (if you have not done so already) from https://netbeans.org/downloads/index.html.  Computer labs in school already have Netbeans installed, so if you do not want to download the softwware on your personal computer/laptop, just use a school computer and skip to the instructions on project setup.
+Anyways, let's get started.  First, we want to download Netbeans (if you have not done so already) from https://netbeans.org/downloads/index.html.  
+
+Please note computer labs in school already have Netbeans installed, so if you do not want to download the software on your personal computer/laptop, just use a school computer and skip to the instructions on project setup.
 
 I suggest choosing Java EE as shown below:
 
