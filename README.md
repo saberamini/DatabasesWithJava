@@ -7,7 +7,7 @@ If you remember from our discussion on relational databases, there are three com
 
 We have worked on the concept of  building Database schemas and working with them using CRUD.
 
-You can argue that we have used some kind of graphical user interface by using SQL Devloper, but this required us to know SQL and execute increasing complex queries.  We likely need a more user friendly GUI (with bottons, menue items etc) if our database will be used by someone that does not have knowledge of SQL.
+You can argue that we have used some kind of graphical user interface by using SQL Developer, but this required us to know SQL and execute increasing complex queries.  We likely need a more user friendly GUI (with bottons, menue items etc) if our database will be used by someone that does not have knowledge of SQL.
 
 To do this, we use Java to build an application.  But in order for this application to talk to our database we need certain functions.  These functions or subroutines are collectively call the API.  
 
