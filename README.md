@@ -54,3 +54,5 @@ Your final project should look something like this and when you run it you shoul
 
 <img src="conection.png" alt="Java project with connection to SQL Server" style="width:128px;height:128px;">
 
+Once done, you can do some basic queries (also shown in the video).
+
